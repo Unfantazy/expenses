@@ -1,0 +1,19 @@
+.header {
+  padding: 20px 10px;
+  background-color: #4EC9B0;
+  color: white;
+  margin-bottom: 30px;
+
+  &__link {
+    font-size: 20px;
+    text-decoration: underline transparent;
+    transition: .2s;
+    &:hover {
+      text-decoration: underline white;
+    }
+  }
+
+  &__link + &__link {
+    margin-left: 15px;
+  }
+}

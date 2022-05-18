@@ -1,0 +1,42 @@
+.table {
+  border: 1px solid #4EC9B0;
+
+  &__title {
+    background-color: #4EC9B0;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  &__inner {
+    padding: 0 20px;
+  }
+
+  &__list {
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    &-item + &-item{
+      margin-top: 10px;
+      border-top: 1px solid #4EC9B0;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__category {
+    min-width: 300px;
+    max-width: 300px;
+  }
+
+  &__total {
+    border-top: 3px solid #4EC9B0;
+    padding: 10px 0;
+  }
+}

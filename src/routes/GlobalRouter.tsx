@@ -5,7 +5,7 @@ import { Incomes } from '../features/incomes/routes/Incomes'
 export const GlobalRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<Incomes />} />
+            <Route path="/incomes" element={<Incomes />} />
         </Routes >
     )
 }
