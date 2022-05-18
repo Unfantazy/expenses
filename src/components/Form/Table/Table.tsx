@@ -18,6 +18,11 @@ export const Table: FC<IProps> = ({
         </div>
         <div className="table__inner">
             <ul className="table__list">
+                <li className="table__list-item">
+                    <span className="table__category"> Категория </span>
+                    <span> Сумма </span>
+                    <span> Дата </span>
+                </li>
                 { data.info.map(el => {
                     return <li className="table__list-item" key={el.id}>
                         <span className="table__category">{el.source}</span>
