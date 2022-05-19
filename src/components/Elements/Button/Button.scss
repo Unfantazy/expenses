@@ -5,4 +5,8 @@
   cursor: pointer;
   border: none;
   color: white;
+  transition: .2s;
+  &:hover {
+    background-color: lighten(#4EC9B0, 5%);
+  }
 }

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
 import './Button.scss'
 
-export const Button = () => {
+interface IButton {
+    title: string
+}
+
+export const Button: FC<IButton> = ({ title }) => {
     return (
         <button className="Button">
-            I am Button
+            {title}
         </button>
     )
 }
