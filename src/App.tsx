@@ -2,13 +2,16 @@ import React from 'react'
 import './App.scss'
 
 import { GlobalRouter } from './routes/GlobalRouter'
-import { Header } from './components/Form/Header'
+import { Menu } from './components/Form/Menu'
+import { Layout } from './components/Layout/Layout'
 
 function App() {
     return (
         <div className="App">
-            <Header />
-            <GlobalRouter />
+            <Layout>
+                <Menu />
+                <GlobalRouter />
+            </Layout>
         </div>
     )
 }

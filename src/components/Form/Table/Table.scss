@@ -14,9 +14,8 @@
 
   &__list {
     &-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       padding: 10px 0;
     }
 
@@ -28,11 +27,6 @@
     span {
       display: inline-block;
     }
-  }
-
-  &__category {
-    min-width: 300px;
-    max-width: 300px;
   }
 
   &__total {

@@ -1,4 +1,4 @@
-import { IIncoms } from '../features/incomes/types/incomsTypes'
+import { IBudgetItem, IIncoms } from '../features/incomes/types/incomsTypes'
 
 export const incomesMock: IIncoms = {
     info: [
@@ -7,3 +7,11 @@ export const incomesMock: IIncoms = {
     ],
     total: 65000
 }
+
+
+export const budgetMock: IBudgetItem[] = [
+    { id: 1, category: 'salary', date: '25.05.2022', sum: 55000, type: 'incomes' },
+    { id: 2, category: 'fun', date: '22.05.2022', sum: 2000, type: 'expenses' },
+    { id: 3, category: 'grocery', date: '25.05.2022', sum: 3500, type: 'expenses' },
+    { id: 3, category: 'investments', date: '01.05.2022', sum: 1000, type: 'incomes' },
+]
