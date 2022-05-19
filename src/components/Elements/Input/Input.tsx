@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react'
 import './Input.scss'
 
-export const Input = () => {
+interface IInput {
+    type?: string
+    placeholder?: string
+}
+
+export const Input: FC<IInput> = ({
+    type = 'string',
+    placeholder = 'type here...'
+}) => {
     return (
-        <input className="Input" placeholder="type here..."/>
+        <input className="Input" placeholder={placeholder} type={type} />
     )
 }

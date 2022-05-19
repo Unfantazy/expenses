@@ -16,9 +16,9 @@ export const HomePage = () => {
     return (
         <div>
             <div>
-                <Select data={selectOptions}/>
-                <Input/>
-                <Input/>
+                <Select data={selectOptions} />
+                <Input />
+                <Input type="number" />
                 <Button title="Add" />
                 
             </div>
