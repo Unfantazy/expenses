@@ -14,7 +14,7 @@ module.exports = {
         "project": "./tsconfig.json",
     },
     "rules": {
-        "no-console": 2,
+        "no-console": 1,
         "semi": ["error", "never"],
         "quotes": ["error", "single"],
         "max-lines": ["error", { "max": 200, "skipBlankLines": true, "skipComments": true }],
@@ -24,7 +24,7 @@ module.exports = {
         "space-in-parens": "error",
         "no-multiple-empty-lines": "error",
         "no-use-before-define": "error",
-        "object-curly-spacing": ["error", "always"]
+        "object-curly-spacing": [1, "always"]
     },
 
 };

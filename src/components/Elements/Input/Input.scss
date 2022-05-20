@@ -1,7 +1,9 @@
 .Input {
-  min-width: 200px;
   height: 40px;
   padding: 5px 15px;
   border: 1px solid #4EC9B0;
   font-size: 15px;
+  &.error {
+    border-color: darkred;
+  }
 }

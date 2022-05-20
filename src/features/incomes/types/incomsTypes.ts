@@ -14,8 +14,7 @@ export interface IIncoms {
 export interface IBudgetItem {
     id?: number
     category: string
-    date: string
+    date: Date
     sum: number
-    type: 'incomes' | 'expenses'
-
+    type: number
 }
