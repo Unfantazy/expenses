@@ -40,7 +40,7 @@ export const Select: FC<ISelect> = ({
     return (
         <div className="customSelect" ref={ref}>
             <div className="customSelect__wrapper">
-                <button className="customSelect__btn" type="button" onClick={toggleOptions}> {data[selectedOption].title} </button>
+                <button className="customSelect__btn" type="button" onClick={toggleOptions}> {data[selectedOption].title}  </button>
                 <ul className={ classNames('customSelect__options', { 'show': isOptionsOpen })}>
                     {data.map((option, index) => (
                         <li key={option.id} className="customSelect__options-item" onClick={() => setOption(index)}> {option.title} </li>
