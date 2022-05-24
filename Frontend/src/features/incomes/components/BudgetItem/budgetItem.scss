@@ -1,0 +1,25 @@
+.budgetItem {
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  padding: 10px;
+  border-radius: 10px;
+
+  &.expenses {
+    border: 1px solid darkred;
+    .budgetItem__sum {
+      color: darkred;
+    }
+  }
+
+  &.incomes {
+    border: 1px solid #4EC9B0;
+    .budgetItem__sum {
+      color: #4EC9B0;
+    }
+  }
+
+}
+
+.budgetItem + .budgetItem {
+  margin-top: 10px;
+}

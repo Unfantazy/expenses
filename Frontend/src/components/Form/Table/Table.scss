@@ -1,0 +1,36 @@
+.table {
+  border: 1px solid #4EC9B0;
+
+  &__title {
+    background-color: #4EC9B0;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  &__inner {
+    padding: 0 20px;
+  }
+
+  &__list {
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 10px 0;
+    }
+
+    &-item + &-item{
+      margin-top: 10px;
+      border-top: 1px solid #4EC9B0;
+    }
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  &__total {
+    border-top: 3px solid #4EC9B0;
+    padding: 10px 0;
+  }
+}
